@@ -5,62 +5,86 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <title>Matías Salas</title>
    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-   <header>
-      <h1>M.</h1>
-      <nav>
-         <ul>
-            <li><a href="#about">About me</a></li>
-            <li><a href="#work">My work</a></li>
-            <li><a href="#contact">Contact</a></li>
-         </ul>
-      </nav>
+   <header class="main-header">
+      <div class="row header">
+         <h1 class="brand">M.</h1>
+         <nav class="main-nav">
+            <ul>
+               <li><a href="#about">Home</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#work">Protafolio</a></li>
+               <li><a href="#contact">Contact</a></li>
+            </ul>
+         </nav>
+      </div>
    </header>
    <main>
-      <section>
-         <h5>Hello World</h5>
-         <h2>My name is Matías Salas M</h2>
-         <img src="images/hero-img.jpg" alt="Hero" width="100%">
-      </section>
-      <section id="about">
-         <h5>About</h5>
-         <h2>Let me introduce myself</h2>
-         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed ex vitae turpis consequat faucibus non nec velit. Praesent risus lacus, convallis non malesuada eu, congue at mi. Integer scelerisque mauris nisl, et fringilla sem finibus vitae.</p>
-         <img src="images/me.jpg" alt="Matias Salas" width="250">
-      </section>
-      <section id="work">
-         <h5>Portafolio</h5>
-         <h2>Check Out Some of My Works!</h2>
-         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed ex vitae turpis consequat faucibus non nec velit. Praesent risus lacus, convallis non malesuada eu, congue at mi. Integer scelerisque mauris nisl, et fringilla sem finibus vitae.</p>
-         <figure>
-            <img src="" alt="Work img">
-            <img src="" alt="Work img">
-            <img src="" alt="Work img">
-            <img src="" alt="Work img">
-            <img src="" alt="Work img">
-            <img src="" alt="Work img">
-         </figure>
-      </section>
-      <section id="contact">
-         <h5>Contact</h5>
-         <h2>Say Hello</h2>
-         <div>
-            <p>Stay in touch</p>
-            <ul>
-               <li>Phone</li>
-               <li>Address</li>
-               <li>mail</li>
+      <section class="hero">
+         <div class="row hero-content">
+            <div class="hero-title">
+               <h2>
+                  I am Matías Salas.<br>
+                  I am a UX/UI designer & front-end developer.
+               </h2>
+            </div>
+            <ul class="hero-btns">
+               <li><a class="btn-hero" href="">DOWNLOAD CV</a></li>
+               <li><a class="btn-hero" href="">LASTEST PROJECTS</a></li>
             </ul>
          </div>
-         <form>
-            <label for=""></label>
-            <input type="">
-            <label for=""></label>
-            <input type="">
-            <textarea></textarea>
-            <button>Send</button>
-         </form>
+      </section>
+
+      <section id="about">
+         <div class="row about-content">
+            <h5>ABOUT</h5>
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed ex vitae turpis consequat faucibus non nec velit. Praesent risus lacus, convallis non malesuada eu, congue at mi. Integer scelerisque mauris nisl, et fringilla sem finibus vitae.</p>
+            <img src="images/me.jpg" alt="Matias Salas" width="250">
+         </div>
+      </section>
+
+      <section id="work">
+         <div class="row">
+            <div class="work-content">
+               <h5>Portafolio</h5>
+               <h2>Latest Projects.</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed ex vitae turpis consequat faucibus non nec velit. Praesent risus lacus, convallis non malesuada eu, congue at mi. Integer scelerisque mauris nisl, et fringilla sem finibus vitae.</p>
+            </div>
+            <figure class="work-photos">
+               <img src="" alt="Work img">
+               <img src="" alt="Work img">
+               <img src="" alt="Work img">
+               <img src="" alt="Work img">
+               <img src="" alt="Work img">
+               <img src="" alt="Work img">
+            </figure>
+         </div>
+        
+      </section>
+      <section id="contact">
+         <div class="row">
+            <h5>Contact</h5>
+            <h2>Say Hello</h2>
+            <div>
+               <p>Stay in touch</p>
+               <ul>
+                  <li>Phone</li>
+                  <li>Address</li>
+                  <li>mail</li>
+               </ul>
+            </div>
+            <form>
+               <label for=""></label>
+               <input type="">
+               <label for=""></label>
+               <input type="">
+               <textarea></textarea>
+               <button>Send</button>
+            </form>
+         </div>
       </section>
    </main>
    <footer>

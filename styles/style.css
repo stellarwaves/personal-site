@@ -1,0 +1,218 @@
+@import url("fonts.css");
+
+html {
+   box-sizing: border-box;
+ }
+ *, *:before, *:after {
+   box-sizing: inherit;
+ }
+ 
+ body {
+   margin: 0;
+   padding: 0;
+   font-size: 16px;
+ }
+
+ li{
+    list-style: none;
+  }
+
+ .row{
+  width: 94%;
+  max-width: 1200px;
+  margin: 0 auto;
+ }
+
+ .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ /* ===================================================================
+ * # Header
+ *
+ * ------------------------------------------------------------------- */
+
+.main-header{
+  position: fixed;
+  width: 100%;
+}
+
+.header{
+  display: grid;
+}
+
+.brand{
+  font-family: "librebaskerville-bold", serif;
+  font-size: 2em; 
+  grid-column: 1;
+  align-self: center;
+  color: #FFFFFF;
+}
+
+.main-nav{
+  grid-column: 2;
+  align-self: center;
+  justify-self: end;
+}
+
+.main-nav ul{
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav li{
+  display: inline-block;
+  padding-left: 0;
+  margin-right: 2rem;
+}
+
+.main-nav li a{
+  font-family: "montserrat-regular", sans-serif;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+/* ===================================================================
+* # Hero
+*
+* ------------------------------------------------------------------- */
+
+.hero{
+  display: grid;
+  justify-items: center;
+  height: 100vh;
+  background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0.4), 
+      rgba(0, 0, 0, 0.5)
+    ),
+    /* bottom, image */
+    url('../images/hero-img.jpg');
+
+  background-size: cover;
+  background-position: center center;
+}
+
+
+.hero-content{
+  display: grid;
+  align-self: end;
+  grid-template-columns: 60% 40%;
+}
+
+.hero-title{
+  grid-column: 1;
+  align-self: end;
+}
+
+.hero-title h2{
+  margin: 0 0 100px 50px;
+  font-family: "librebaskerville-regular", serif;
+  font-size: 3.2em;
+  line-height: 1.4em;
+  color: #FFFFFF;
+}
+
+.hero-btns{
+  grid-column: 2;
+  justify-self: end;
+  align-self: end;
+  margin: 0 70px 100px 0;
+  padding: 0;
+}
+
+.hero-btns li:first-child{
+  margin-bottom: 20px; 
+}
+
+.btn-hero{
+  display: block;
+  width: 210px;
+  font-size: 0.8em;
+  line-height: 3.5em;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  font-family: "montserrat-regular", sans-serif;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* ===================================================================
+* # About
+*
+* ------------------------------------------------------------------- */
+
+#about{
+  padding: 100px 0;
+  background-color: #f5f5f5;;
+}
+
+.about-content{
+  width: 800px;
+  text-align: center;
+}
+
+.about-content h5{
+  font-family: "montserrat-regular", sans-serif;
+  font-size: 1.2em;
+  margin: 0 0 5px 0;
+  color: #07617d;
+}
+
+.about-content h2{
+  font-family: "librebaskerville-bold", serif;
+  font-size: 3em;
+  margin: 0 0 20px 0;
+}
+
+.about-content p{
+  font-family: "montserrat-regular", sans-serif;
+  font-size: 1.2em;
+  line-height: 1.8em;
+  margin-bottom: 40px;
+  color: #0D0A0B;
+}
+
+.about-content img{
+  height: 260px;
+  width: 260px;
+  border-radius: 50%;
+}
+
+/* ===================================================================
+* # WORK
+*
+* ------------------------------------------------------------------- */
+
+#work{
+  padding: 100px 0;
+}
+
+.work-content{
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.work-content h5{
+  font-family: "montserrat-regular", sans-serif;
+  font-size: 1.2em;
+  margin: 0 0 5px 0;
+  color: #07617d;
+}
+
+.work-content h2{
+  font-family: "librebaskerville-bold", serif;
+  font-size: 3em;
+  margin: 0 0 20px 0;
+}
+
+.work-content p{
+  font-family: "montserrat-regular", sans-serif;
+  font-size: 1.2em;
+  line-height: 1.8em;
+  margin-bottom: 40px;
+  color: #0D0A0B;
